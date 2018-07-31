@@ -57,15 +57,17 @@ class Dot {
       die();
     }
     vel.add(acc);
-    vel.limit(15);
+    vel.limit(5);
     pos.add(vel);
     acc.setMag(0);
   }
   
   boolean touchingObstacle(){
-    if(pos.y > 200 && pos.y < 210 && pos.x > 0 && pos.x < width - 200){
+    if(pos.y > 300 && pos.y < 310 && pos.x > 0 && pos.x < width - 300){
       return true;
-    }else if(pos.y > 500 && pos.y < 510 && pos.x > 200 && pos.x < width){
+    }else if(pos.y > 400 && pos.y < 410 && pos.x > 300 && pos.x < width){
+      return true;
+    }else if(pos.y > 500 && pos.y < 510 && pos.x > 0 && pos.x < width - 300){
       return true;
     }
     return false;
@@ -103,10 +105,10 @@ class Dot {
   void display(){
     fill(255, 100);
     if(isBest){
-      fill(255, 0, 0);
+      fill(255, 46, 76);
     }
     if(isTarget){
-      fill(0, 255, 0);
+      fill(252, 215, 127);
     }
     stroke(100);
     ellipse(pos.x, pos.y, 2 * r, 2 * r);

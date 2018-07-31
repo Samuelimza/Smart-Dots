@@ -3,6 +3,7 @@ class Population{
   float maxFitness = 1000;
   int maxFitI = 0;
   int x, y, n, leastStep = 1000;
+  int gen = 0;
   
   Population(int x, int y, int n, boolean random){
     this.x = x; this.y = y; this.n = n;
@@ -59,6 +60,7 @@ class Population{
     }
     next[0] = new Dot(dots[maxFitI]);
     next[0].isBest = true;
+    //next[1].isTarget = true;
     for(int i = 1; i < this.n; i++){
       dots = next.clone();
     }
@@ -68,6 +70,7 @@ class Population{
     for(int i = 1; i < this.n; i++){
       dots[i].dna.mutate();
     }
+    gen++;
   }
   
   void display(){
