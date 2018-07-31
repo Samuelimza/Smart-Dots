@@ -11,4 +11,6 @@ The target is Yellow colored. The best Dot from the previous generation is highl
 
 ![3](https://user-images.githubusercontent.com/34769156/43474411-6ceda20a-9510-11e8-8677-ebfdcfe5a3fb.png)
 
+![32_a](https://user-images.githubusercontent.com/34769156/43474754-617d55ea-9511-11e8-9479-816f83762cd3.png)
+
 ![32_b](https://user-images.githubusercontent.com/34769156/43412582-56840c72-944b-11e8-855d-83fdfb7cdc10.png)
