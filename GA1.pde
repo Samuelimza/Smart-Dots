@@ -34,7 +34,6 @@ void draw(){
   present.update();
   present.display();
   
-  saveFrame("frames/####.tga");
   if(present.allDead()){
     present.calcMaxFitness();
     present.reproduce();
