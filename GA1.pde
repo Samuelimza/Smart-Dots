@@ -4,7 +4,6 @@ Population present;
 PFont f;
 
 void setup(){
-  background(200);
   frameRate(100);
   size(700, 700);
   target = new Dot(width / 2, 50, 5, true);
