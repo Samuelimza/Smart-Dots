@@ -13,6 +13,7 @@ void setup(){
 
 void draw(){
   background(51);
+  print("etdgh");
   textFont(f, 30);
   stroke(4);
   fill(187, 252, 184, 150);/*(251, 214, 133, 100);*/
