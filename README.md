@@ -10,7 +10,11 @@ A simulation is run for the Dots to try and reach the target. The Genetic Algori
 ## Specifics
 The target is Yellow colored. The best Dot from the previous generation is highlighted in red. After the path is discovered, the algorithm optimizes for the quickest path by only considering Dots better than the previous generation.
 
-## Here are some Screenshots:
+## Example:
+
+To see a full run watch: https://www.youtube.com/watch?v=9twiJwJ310Y
+
+Screenshots:
 
 ![3](https://user-images.githubusercontent.com/34769156/43474411-6ceda20a-9510-11e8-8677-ebfdcfe5a3fb.png)
 
