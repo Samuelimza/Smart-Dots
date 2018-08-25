@@ -1,6 +1,7 @@
 class Population{
   Dot[] dots;
   float maxFitness = 1000;
+  float totalFitness = 0;
   int maxFitI = 0;
   int x, y, n, leastStep = 1000;
   int gen = 0;
@@ -41,7 +42,11 @@ class Population{
   }
   
   Dot chooseParent(){
-    float luckyNumber = random(maxFitness);
+    totalFitness = 0;
+    for(int i = 0; i < this.n; i++){
+      totalFitness += dots[i].fitness;
+    }
+    float luckyNumber = random(totalFitness);
     float runningSum = 0;
     for(int i = 0; i < this.n; i++){
        runningSum += dots[i].fitness;
